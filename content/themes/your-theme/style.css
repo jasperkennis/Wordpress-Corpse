@@ -1,0 +1,61 @@
+/*
+Theme Name: My Theme
+Theme URI: http://github.com/My-Username/My-Theme
+Description: My Description
+Version: 1.0
+Author: Your Name
+Author URI: http://www.yourwebsite.com
+*/
+
+/* WordPress Required Styles */
+.alignnone {
+	display: block;
+	margin: auto;s
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.wp-caption img {
+		margin: 0;
+		padding: 0;
+		border: 0 none;
+	}
+
+	.wp-caption-dd {
+		font-size: 11px;
+		line-height: 17px;
+		padding: 0 4px 5px;
+		margin: 0;
+	}
+	.gallery-caption,
+	.bypostauthor,
+	.wp-caption-text {
+		margin: inherit;
+	}
+.sticky {
+	background: #f7f7f7;
+	padding: 0 10px 10px;
+}	
+	.sticky h2 {
+		padding-top: 10px;
+	}
