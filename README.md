@@ -10,8 +10,13 @@ Uploads live in the non-version controlled folder ```/media``` in the root.
 
 ## Installation
 ### Fetch the submodules
-After cloning this repository, fetch the submodules by doing so:
+After cloning this repository, fetch the Wordpress submodule by doing so:
 ```git submodule init``` and then ```git submodule update```.
+cd into wordpress and checkout the version you desire. For instance ```git checkout 3.5.1```.
+
+Important:
+Don't forget to tell git in the parent repository you've checked out a different tag. Fortunately, that's very easy.
+cd into the root of your project and hit ```git submodule update``` again.
 
 ### Setup the local environment
 Setting up the local development machine is easy:
