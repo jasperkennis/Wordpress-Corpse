@@ -71,20 +71,20 @@ Like this:
 		ignore = dirty
 ```
 
-### Tips & Recommendations
+## Tips & Recommendations
 * Use something like [Yeoman](http://www.yeoman.io) for theme development to benefit of the joys of Coffee Script, SASS and more.
 * Use the ```WP_DEBUG``` constant in ```local_settings.php``` to load your javascript files in ```functions.php``` and one compressed javascript file on the production server. See ```functions.php``` for details.
 * Use [Git Flow](https://github.com/nvie/gitflow). Seriously, use it.
 
 ## Features & Plugins
 
-## Functions.php
+### Functions.php
 Comes preloaded with some handy code snippets.
 
-## Style.css
+### Style.css
 Comes with the default Wordpress styles necessary for displaying content right
 
-## Gitignore
+### Gitignore
 Comes preset with default ignores for uploads, wordpress system files, cache folders, sass-cache, DS_Store and more. Modify this to suit your needs obviously.
 
 ### Debug Bar
