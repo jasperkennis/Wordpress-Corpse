@@ -38,6 +38,7 @@ Setting up the local development machine is easy:
 	define( 'WP_SITEURL','http://'. HOST .'/'. SITE_PATH );
 	define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 	define( 'WP_CONTENT_URL', 'http://'. HOST .'/'. SITE_PATH .'/content' );
+	define( 'UPLOADS', 'media/uploads' );
 	?>
 	```
 3. Modify ```local-config.php``` to match your MAMP settings
@@ -47,8 +48,7 @@ Note:
 
 ### Setup the media folder
 1. Make sure the folder ```media``` is present and has the right permissions (```chmod 0700```).
-2. Go to the media settings in the Wordpress admin
-3. Set the Upload Path to ```../media``` and the Upload Path Url to ```[site_url]/media``` eg. http://localhost/my_website/media
+2. It should work out of the box. If it doesn't, make sure your ```UPLOADS``` setting in your ```wp-config``` and ```local-config``` is present and correct.
 
 ## Development vs. Production/Staging
 Wordpress stores a lot of it's settings in the database, and to make things worse, each plugin uses their own way of storing that information too. There isn't really a best practice of syncing these settings, if you do know, please contribute!

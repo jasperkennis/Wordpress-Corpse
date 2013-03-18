@@ -12,11 +12,16 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 }
 
-// ========================
+// ================================================
 // Custom Content Directory
-// ========================
+// ================================================
 define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/content' );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
+
+// ================================================
+// Custom Uploads Directory
+// ================================================
+define( 'UPLOADS', 'media/uploads' );
 
 // ================================================
 // You almost certainly do not want to change these
