@@ -33,12 +33,12 @@ Setting up the local development machine is easy:
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
 	define( 'HOST', 'localhost' ); // Probably 'localhost' too, be sure to include the port if it's other than 80 in your setup.
-	define( 'SITE_PATH', 'fontanel/finals/wordpress'); // the path to you wordpress folder, relative to the hostname aka the part of the url that comes after the hostname. Don't use a leading /.
+	define( 'SITE_PATH', 'your_path/your_subfolder'); // the path to the root of your project, relative to the hostname aka the part of the url that comes after the hostname. Don't use a leading /.
 	define( 'WP_HOME', 'http://'. HOST .'/'. SITE_PATH);
-	define( 'WP_SITEURL','http://'. HOST .'/'. SITE_PATH );
+	define( 'WP_SITEURL','http://'. HOST .'/'. SITE_PATH .'/wordpress');
 	define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 	define( 'WP_CONTENT_URL', 'http://'. HOST .'/'. SITE_PATH .'/content' );
-	define( 'UPLOADS', 'media/uploads' );
+	define( 'UPLOADS', '../media/uploads' ); // make sure this is relative to the root of your site path and not to your /wordpress folder.
 	?>
 	```
 3. Modify ```local-config.php``` to match your MAMP settings
