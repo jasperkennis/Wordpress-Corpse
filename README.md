@@ -32,8 +32,8 @@ Setting up the local development machine is easy:
 	define( 'DB_USER', 'root' );
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' ); // Probably 'localhost'
-	define( 'HOST', 'localhost' ); // Probably 'localhost' too
-	define( 'SITE_PATH', '/websites/my_website'); // the folder where your project livs aka the part of the url that comes after the hostname
+	define( 'HOST', 'localhost' ); // Probably 'localhost' too, be sure to include the port if it's other than 80 in your setup.
+	define( 'SITE_PATH', 'fontanel/finals/wordpress'); // the path to you wordpress folder, relative to the hostname aka the part of the url that comes after the hostname. Don't use a leading /.
 	define( 'WP_HOME', 'http://'. HOST .'/'. SITE_PATH);
 	define( 'WP_SITEURL','http://'. HOST .'/'. SITE_PATH );
 	define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
